@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Details</title>
+    </head>
+
+    <body>
+        <h1>Task: {{task}}</h1>
+        <h2>Description: {{task.description}}</h2>
+        <h2>Time Created: {{task.created_at}}</h2>
+        <h2>Completed: {{task.status}}</h2>
+        <h2>Time Completed: {{task.completed_at}}</h2>
+        <a href="{% url 'tasks' %}">Go Back</a>
+    </body>
+</html>

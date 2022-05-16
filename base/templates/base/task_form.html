@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h3>Edit Task: </h3>
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Submit" onclick="completed(tasks)">
+            </br>
+            </br>
+            <a href="{% url 'tasks' %}">Go Back</a>
+        </form>
+    </body>
+</html>
